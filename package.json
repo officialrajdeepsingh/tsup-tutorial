@@ -1,0 +1,29 @@
+{
+  "name": "tsup-tutorial",
+  "version": "1.0.0",
+  "description": "demo of tsup tutorial",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/officialrajdeepsingh/tsup-tutorial.git"
+  },
+  "keywords": [
+    "tsup",
+    "tsup-tutorial"
+  ],
+  "author": "Rajdeep Singh officialrajdeepsingh@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/officialrajdeepsingh/tsup-tutorial/issues"
+  },
+  "homepage": "https://github.com/officialrajdeepsingh/tsup-tutorial#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "tsup": "^6.7.0",
+    "typescript": "^5.1.3"
+  }
+}
