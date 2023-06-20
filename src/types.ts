@@ -1,3 +1,13 @@
-export type AddNum = number;
+export interface buttonType {
+  text: string;
+}
+type items= {url:string; name:string}
 
-export type AddString = string;
+export interface headerProps{
+  logo:string;
+  navItem:items[]
+}
+
+export interface footerProps{
+  copyrightText: string 
+}
