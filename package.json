@@ -1,6 +1,6 @@
 {
   "name": "tsup-tutorial",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "demo of tsup tutorial",
   "files": [
     "dist/*"
@@ -27,22 +27,22 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts",
-      "require":"./dist/index.js"
+      "require": "./dist/index.js"
     },
     "./Button": {
       "import": "./dist/Button.js",
       "types": "./dist/Button.d.ts",
-      "require":"./dist/Button.js"
+      "require": "./dist/Button.js"
     },
     "./Headings": {
       "import": "./dist/Headings.js",
       "types": "./dist/Headings.d.ts",
-      "require":"./dist/Headings.js"
+      "require": "./dist/Headings.js"
     },
     "./Icons": {
       "import": "./dist/Icons.js",
       "types": "./dist/Icons.d.ts",
-      "require":"./dist/Icons.js"
+      "require": "./dist/Icons.js"
     }
   },
   "scripts": {
