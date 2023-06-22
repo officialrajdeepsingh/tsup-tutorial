@@ -1,3 +1,3 @@
 ## Tsup Tutorial
 
-Built the tsup tutorial h
+The Tsup Tutorial npm package explains how to use the Tsup library to bundle typescript projects.
