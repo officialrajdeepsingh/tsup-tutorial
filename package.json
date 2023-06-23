@@ -5,8 +5,8 @@
   "files": [
     "dist/*"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "typesVersions": {
     "*": {
       ".": [
@@ -25,24 +25,24 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
+      "import": "./dist/index.esm.js",
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.js"
+      "require": "./dist/index.cjs.js"
     },
     "./Button": {
-      "import": "./dist/Button.js",
+      "import": "./dist/Button.esm.js",
       "types": "./dist/Button.d.ts",
-      "require": "./dist/Button.js"
+      "require": "./dist/Button.cjs.js"
     },
     "./Headings": {
-      "import": "./dist/Headings.js",
+      "import": "./dist/Headings.esm.js",
       "types": "./dist/Headings.d.ts",
-      "require": "./dist/Headings.js"
+      "require": "./dist/Headings.cjs.js"
     },
     "./Icons": {
-      "import": "./dist/Icons.js",
+      "import": "./dist/Icons.esm.js",
       "types": "./dist/Icons.d.ts",
-      "require": "./dist/Icons.js"
+      "require": "./dist/Icons.cjs.js"
     }
   },
   "scripts": {
