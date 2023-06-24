@@ -1,10 +1,12 @@
 {
   "name": "tsup-tutorial",
-  "version": "1.0.5",
-  "description": "demo of tsup tutorial",
+  "version": "1.0.14",
+  "description": "Demo of tsup tutorial",
   "files": [
     "dist/*"
   ],
+  "types": "dist/index.d.ts",
+  "style": "dist/tailwind.css",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "typesVersions": {
@@ -46,8 +48,9 @@
     }
   },
   "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup"
+    "dev": "tsup --watch && pnpm tailwind --minify",
+    "build": "tsup && pnpm tailwind",
+    "tailwind": "./tailwindcss -o ./dist/tailwind.css --minify"
   },
   "repository": {
     "type": "git",
@@ -65,6 +68,10 @@
   "homepage": "https://github.com/officialrajdeepsingh/tsup-tutorial#readme",
   "devDependencies": {
     "@types/node": "^20.2.5",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.2",
     "tsup": "^6.7.0",
     "typescript": "^5.1.3"
   },
