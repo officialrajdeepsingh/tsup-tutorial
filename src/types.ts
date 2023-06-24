@@ -1,6 +1,9 @@
+import type { ReactNode } from 'react';
+
 export interface buttonType {
-  text: string;
+  children: ReactNode;
 }
+
 type items= {url:string; name:string}
 
 export interface headerProps{
