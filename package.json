@@ -1,6 +1,6 @@
 {
   "name": "tsup-tutorial",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "demo of tsup tutorial",
   "files": [
     "dist/*"
