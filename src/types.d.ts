@@ -13,4 +13,4 @@ export interface headerProps{
 
 export interface footerProps{
   copyrightText: string 
-}
+} 
