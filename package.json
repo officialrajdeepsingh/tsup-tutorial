@@ -9,22 +9,6 @@
   "style": "dist/tailwind.css",
   "main": "dist/index.js",
 
-  "typesVersions": {
-    "*": {
-      ".": [
-        "./dist/index.d.ts"
-      ],
-      "Button": [
-        "./dist/Button.d.ts"
-      ],
-      "Headings": [
-        "./dist/Headings.d.ts"
-      ],
-      "Icons": [
-        "./dist/Icons.d.ts"
-      ]
-    }
-  },
   "exports": {
     ".": {
       "import": "./dist/index.esm.js",
