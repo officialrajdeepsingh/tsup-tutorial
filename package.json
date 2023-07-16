@@ -8,27 +8,46 @@
   "types": "dist/index.d.ts",
   "style": "dist/tailwind.css",
   "main": "dist/index.js",
-
   "exports": {
     ".": {
-      "import": "./dist/index.esm.js",
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.esm.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs.js"
+      }
     },
     "./Button": {
-      "import": "./dist/Button.esm.js",
-      "types": "./dist/Button.d.ts",
-      "require": "./dist/Button.cjs.js"
+      "import": {
+        "types": "./dist/Button.d.ts",
+        "default": "./dist/Button.esm.js"
+      },
+      "require": {
+        "types": "./dist/Button.d.ts",
+        "default": "./dist/Button.cjs.js"
+      }
     },
     "./Headings": {
-      "import": "./dist/Headings.esm.js",
-      "types": "./dist/Headings.d.ts",
-      "require": "./dist/Headings.cjs.js"
+      "import": {
+        "types": "./dist/Headings.d.ts",
+        "default": "./dist/Headings.esm.js"
+      },
+      "require": {
+        "types": "./dist/Headings.d.ts",
+        "default": "./dist/Headings.cjs.js"
+      }
     },
     "./Icons": {
-      "import": "./dist/Icons.esm.js",
-      "types": "./dist/Icons.d.ts",
-      "require": "./dist/Icons.cjs.js"
+      "import": {
+        "types": "./dist/Icons.d.ts",
+        "default": "./dist/Icons.esm.js"
+      },
+      "require": {
+        "types": "./dist/Icons.d.ts",
+        "default": "./dist/Icons.cjs.js"
+      }
     }
   },
   "scripts": {
