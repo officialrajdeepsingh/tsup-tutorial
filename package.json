@@ -49,7 +49,7 @@
   },
   "scripts": {
     "dev": "tsup --watch && pnpm tailwind --watch",
-    "build": "tsup && pnpm tailwind --minify",
+    "build": "tsup && pnpm tailwind --minify -o ./dist/tailwind.css ",
     "tailwind": "pnpm tailwindcss -i ./style.css  -o ./dist/tailwind.css "
   },
   "repository": {
