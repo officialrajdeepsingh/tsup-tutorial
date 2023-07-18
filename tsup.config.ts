@@ -36,6 +36,6 @@ export default defineConfig((options) => ({
   
  */
 
-  minify: false,
-  // minify: !options.watch Conditional config
+ //  minify: false, without Conditional
+   minify: !options.watch
 }));
