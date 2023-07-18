@@ -10,44 +10,24 @@
   "main": "dist/index.js",
   "exports": {
     ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.esm.js"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.cjs.js"
-      }
+      "import": "./dist/index.esm.js",
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs.js"
     },
     "./Button": {
-      "import": {
-        "types": "./dist/Button.d.ts",
-        "default": "./dist/Button.esm.js"
-      },
-      "require": {
-        "types": "./dist/Button.d.ts",
-        "default": "./dist/Button.cjs.js"
-      }
+      "import": "./dist/Button.esm.js",
+      "types": "./dist/Button.d.ts",
+      "require": "./dist/Button.cjs.js"
     },
     "./Headings": {
-      "import": {
-        "types": "./dist/Headings.d.ts",
-        "default": "./dist/Headings.esm.js"
-      },
-      "require": {
-        "types": "./dist/Headings.d.ts",
-        "default": "./dist/Headings.cjs.js"
-      }
+      "import": "./dist/Headings.esm.js",
+      "types": "./dist/Headings.d.ts",
+      "require": "./dist/Headings.cjs.js"
     },
     "./Icons": {
-      "import": {
-        "types": "./dist/Icons.d.ts",
-        "default": "./dist/Icons.esm.js"
-      },
-      "require": {
-        "types": "./dist/Icons.d.ts",
-        "default": "./dist/Icons.cjs.js"
-      }
+      "import": "./dist/Icons.esm.js",
+      "types": "./dist/Icons.d.ts",
+      "require": "./dist/Icons.cjs.js"
     }
   },
   "scripts": {
@@ -71,9 +51,6 @@
   "homepage": "https://github.com/officialrajdeepsingh/tsup-tutorial#readme",
   "devDependencies": {
     "@types/node": "^20.2.5",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.3.2",
     "tsup": "^6.7.0",
     "typescript": "^5.1.3"
