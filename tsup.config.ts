@@ -1,25 +1,31 @@
 import { defineConfig } from "tsup";
 import tsconfig from "./tsconfig.json";
 
+
 export default defineConfig((options) => ({
   entry: [
     "src/index.tsx",
     "src/Button.tsx",
     "src/Headings.tsx",
     "src/Icons.tsx",
+    "style.css"
   ],
-  dts: true,
+  dts:{
+    entry: [
+      "src/index.tsx",
+      "src/Button.tsx",
+      "src/Headings.tsx",
+      "src/Icons.tsx"
+    ]
+  },
   outDir: "dist",
   format: ["esm", "cjs"],
   name: "tsup-tutorial",
-  splitting: false,
-  outExtension({ format }) {
-    return {
-      js: `.${format}.js`,
-    };
-  },
-  sourcemap: true,
+  splitting: true,
+  outExtension: ({format}) => ({ js: `.${format}.js`}),
+  sourcemap: false,
   clean: true,
+
   // target: tsconfig.compilerOptions.target as "es2016",
   target: ['es2020'],
 
