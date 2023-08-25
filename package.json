@@ -7,33 +7,37 @@
   ],
   "types": "dist/index.d.ts",
   "style": "dist/tailwind.css",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "exports": {
     ".": {
-      "import": "./dist/index.esm.js",
+      "import": "./dist/src/index.esm.js",
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs.js"
+      "require": "./dist/src/index.cjs.js"
     },
     "./Button": {
-      "import": "./dist/Button.esm.js",
+      "import": "./dist/src/Button.esm.js",
       "types": "./dist/Button.d.ts",
-      "require": "./dist/Button.cjs.js"
+      "require": "./dist/src/Button.cjs.js"
     },
     "./Headings": {
-      "import": "./dist/Headings.esm.js",
+      "import": "./dist/src/Headings.esm.js",
       "types": "./dist/Headings.d.ts",
-      "require": "./dist/Headings.cjs.js"
+      "require": "./dist/src/Headings.cjs.js"
     },
     "./Icons": {
-      "import": "./dist/Icons.esm.js",
+      "import": "./dist/src/Icons.esm.js",
       "types": "./dist/Icons.d.ts",
-      "require": "./dist/Icons.cjs.js"
+      "require": "./dist/src/Icons.cjs.js"
+    },
+    "./styles.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "scripts": {
     "dev:tailwind": "tsup --watch && pnpm tailwind --watch",
-    "dev": "tsup --watch && pnpm tailwind --watch",
-    "build": "tsup && pnpm tailwind --minify -o ./dist/tailwind.css ",
+    "dev": "tsup --watch",
+    "build": "tsup ",
     "tailwind": "pnpm tailwindcss -i ./style.css  -o ./dist/tailwind.css "
   },
   "repository": {
