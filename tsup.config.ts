@@ -22,7 +22,11 @@ export default defineConfig((options) => ({
   format: ["esm", "cjs"],
   name: "tsup-tutorial",
   splitting: true,
-  outExtension: ({format}) => ({ js: `.${format}.js`}),
+  outExtension({ format }) {
+    return {
+      js: `.${format}.js`,
+    }
+  },
   sourcemap: false,
   clean: true,
 
