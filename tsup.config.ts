@@ -10,6 +10,8 @@ export default defineConfig((options) => ({
     "src/Icons.tsx",
     "style.css"
   ],
+
+// remove the generate the dts on style.css   
   dts:{
     entry: [
       "src/index.tsx",
