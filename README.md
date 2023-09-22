@@ -36,4 +36,4 @@ require("tsup-tutorial/styles.css");
 
 ```
 
-[Live example](https://codesandbox.io/p/sandbox/next-js-fxis37) How to use tsup-tutorial package in your react or nextjs project. 
+[Live example](https://codesandbox.io/p/sandbox/nextjs-tsup-tutorial-996q96-996q96) How to use tsup-tutorial package in your react or nextjs project. 
